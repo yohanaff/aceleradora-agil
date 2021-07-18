@@ -1,0 +1,68 @@
+<html>
+    <!-- 
+        
+    ==========================================
+        Exercício de programação - 2021/2 
+    ==========================================
+            ENUNCIADO 3 - DESAFIO  
+    -->
+    <head>
+        <meta charset="utf-8">
+        <title>Enunciado 3 - Desafio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+    <!-- Dados do aluno -->
+<center>
+    <table id="td">
+        <thead>
+            <caption>Dados do aluno(a)</caption>
+        <tbody>
+            <tr>
+                <th>Nome:</th>
+                <td><input type="text" name="fname" id="fname"></td>
+            </tr>
+        </thead>
+            <tr>
+                <th>Sobrenome:</th>
+                <td><input type="text" name="lname" id="lname"></td>
+            </tr>
+            <tr>
+                <th>Nota do 1° semestre:</th>
+                <td><input type="text" name="grade1" id="grade1"> </td>
+            </tr>
+            <tr>
+                <th>Nota do 2° semestre:</th>
+                <td><input type="text" name="grade2" id="grade2"></td>
+            </tr> 
+            <tr>
+                <th>Frequência (sem o símbolo "%"):</th>
+                <td><input type="text" name="frequency" id="frequency"></td>
+            </tr>
+            <tr id="btnadd">
+               <td colspan="2"><input type="button" name="button" id="btn" value="Adicionar aluno(a)" onclick="AddRow(); AddStudent()"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Boletim -->
+
+        <table id="show">
+            <thead>
+				<tr id="title">
+					<th>ID</th>
+					<th>Nome</th>
+					<th>1° Semestre</th>
+					<th>2° Semestre</th>
+                    <th>Nota Final</th>
+                    <th>Frequência</th>
+				</tr>
+            </thead>
+		</table>  
+</center>
+
+    <script src="boletim.js"></script>
+</body>
+
+</html>
